@@ -26,7 +26,7 @@ const App: React.FC = () => {
   const colemanLiauScore: number = Math.ceil(colemanLiau({sentence:sentenceCount, word: wordCount, letter: characterCount}));
 
   const daleChallFormulaScore: number[] = daleChallFormula({word: wordCount, sentence: sentenceCount, difficultWord: hardWordCount});
-  const daleChallFormulaGrade: number = daleChallFormula.gradeLevel(daleChallFormulaScore);
+  const daleChallFormulaGrade: number = Math.ceil(daleChallFormula.gradeLevel(daleChallFormulaScore));
 
   return (
     <div>
