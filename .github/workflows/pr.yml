@@ -1,0 +1,17 @@
+on: [pull_request]
+
+name: PR Builder
+jobs:
+  pr:
+    name: PR
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build container
+      uses: ./.github/actions/make/
+      with:
+        args: build
+      env:
+        REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
+        REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+        REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
