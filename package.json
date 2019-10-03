@@ -11,6 +11,7 @@
     "@types/wink-tokenizer": "^4.0.0",
     "automated-readability": "^1.0.4",
     "coleman-liau": "^1.0.4",
+    "dale-chall": "^1.0.3",
     "dale-chall-formula": "^1.0.4",
     "flesch": "^1.0.4",
     "flesch-kincaid": "^1.0.4",
