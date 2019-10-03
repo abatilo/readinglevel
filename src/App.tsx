@@ -2,21 +2,31 @@ import React, { useState } from 'react';
 import winkTokenizer from 'wink-tokenizer';
 import tokenizer from 'sbd';
 import syllables from 'syllable';
-import gunningFog from 'gunning-fog';
-import automatedReadability from 'automated-readability';
-import colemanLiau from 'coleman-liau';
-import daleChall from 'dale-chall';
-import daleChallFormula from 'dale-chall-formula';
-import flesch from 'flesch';
-import fleschKincaid from 'flesch-kincaid';
-import smogFormula from 'smog-formula';
 import spache from 'spache';
-import spacheFormula from 'spache-formula';
+import { asyncComponent } from 'react-async-component';
+import daleChall from 'dale-chall';
 
 const defaultText = `In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
 
 Radix sort can be applied to data that can be sorted lexicographically, be they
 integers, words, punch cards, playing cards, or the mail.`;
+
+const AsyncGunningFog = asyncComponent({
+                               resolve: () => import('./GunningFog')});
+const AsyncAutomatedReadability = asyncComponent({
+                               resolve: () => import('./AutomatedReadability')});
+const AsyncColemanLiau = asyncComponent({
+                               resolve: () => import('./ColemanLiau')});
+const AsyncDaleChall = asyncComponent({
+                               resolve: () => import('./DaleChall')});
+const AsyncFlesch = asyncComponent({
+                               resolve: () => import('./Flesch')});
+const AsyncFleschKincaid = asyncComponent({
+                               resolve: () => import('./FleschKincaid')});
+const AsyncSMOG = asyncComponent({
+                               resolve: () => import('./SMOG')});
+const AsyncSpache = asyncComponent({
+                               resolve: () => import('./Spache')});
 
 const App: React.FC = () => {
   const [words, setWords] = useState(defaultText);
@@ -37,54 +47,29 @@ const App: React.FC = () => {
   const multiSyllabicWordCount: number = tokens.map(t => syllables(t)).filter(n => 3 <=
                                                                            n).length;
 
-  const gunningFogScore: number = Math.floor(gunningFog({sentence:sentenceCount, word: wordCount, complexPolysillabicWord: multiSyllabicWordCount}));
-  const automatedReadabilityScore: number = Math.floor(automatedReadability({sentence:sentenceCount, word: wordCount, character: characterCount}));
-  const colemanLiauScore: number = Math.floor(colemanLiau({sentence:sentenceCount, word: wordCount, letter: characterCount}));
-
-  const daleChallFormulaScore: number = daleChallFormula({word: wordCount, sentence: sentenceCount, difficultWord: hardWordCount});
-  const daleChallFormulaGrade: number = daleChallFormulaScore < 10 ? daleChallFormula.gradeLevel(daleChallFormulaScore)[0] : 16;
-
-  const fleschScore: number = flesch({word: wordCount, sentence: sentenceCount,
-                                     syllable: syllableCount});
-  const fleschAge: number = 20 - Math.floor(fleschScore / 10);
-
-  const fleschKincaidScore: number = Math.floor(fleschKincaid({word: wordCount, sentence: sentenceCount,
-                                     syllable: syllableCount}));
-
-  const smogFormulaGrade: number = Math.floor(smogFormula({sentence: sentenceCount,
-                                                         polysillabicWord:
-                                                         multiSyllabicWordCount}));
-
-  const spacheFormulaGrade: number = Math.floor(spacheFormula({word: wordCount, sentence: sentenceCount, unfamiliarWord:
-                      unfamiliarSpacheWordsCount}));
+  const params = {
+    sentence: sentenceCount,
+    word: wordCount,
+    letter: characterCount,
+    difficultWord: hardWordCount,
+    syllable: syllableCount,
+    polysillabicWord: multiSyllabicWordCount,
+    complexPolysillabicWord: multiSyllabicWordCount,
+    character: characterCount,
+    unfamiliarWord: unfamiliarSpacheWordsCount
+  };
 
   return (
     <div>
       <textarea value={words} onChange={(event) => setWords(event.target.value)} />
-      <div>
-        Gunning Fog (Grade Level): {gunningFogScore}
-      </div>
-      <div>
-        Automated readability (Grade Level): {automatedReadabilityScore}
-      </div>
-      <div>
-        Coleman Liau (Grade Level): {colemanLiauScore}
-      </div>
-      <div>
-        Dale Chall (Grade Level): {daleChallFormulaGrade}
-      </div>
-      <div>
-        Flesch (Age): {fleschAge}
-      </div>
-      <div>
-        Flesch Kincaid (Grade Level): {fleschKincaidScore}
-      </div>
-      <div>
-        SMOG Formula (Grade Level): {smogFormulaGrade}
-      </div>
-      <div>
-        Spache Formula (Grade Level): {spacheFormulaGrade}
-      </div>
+      <AsyncGunningFog {...params} />
+      <AsyncAutomatedReadability {...params} />
+      <AsyncColemanLiau {...params} />
+      <AsyncDaleChall {...params} />
+      <AsyncFlesch {...params} />
+      <AsyncFleschKincaid {...params} />
+      <AsyncSMOG {...params} />
+      <AsyncSpache {...params} />
     </div>
   );
 }
