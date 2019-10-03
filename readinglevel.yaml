@@ -1,0 +1,107 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: spinnaker
+  labels:
+    app: readinglevel
+  name: readinglevel
+spec:
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: readinglevel
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      name: readinglevel
+      labels:
+        app: readinglevel
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - readinglevel
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - image: registry.aaronbatilo.dev/readinglevel
+          name: readinglevel
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP
+      imagePullSecrets:
+        - name: abatilo-registry
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: spinnaker
+  name: readinglevel
+spec:
+  selector:
+    app: readinglevel
+  ports:
+  - name: web
+    port: 80
+    targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: spinnaker
+  name: readinglevel
+  labels:
+    traefikSelector: abatiloservices
+    app: readinglevel
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: www.readinglevel.app
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: readinglevel
+          servicePort: web
+---
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: readinglevel
+  namespace: spinnaker
+spec:
+  maxReplicas: 10
+  minReplicas: 2
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: readinglevel
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: 75
+---
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: readinglevel
+  namespace: spinnaker
+spec:
+  selector:
+    matchLabels:
+      app: readinglevel
+  maxUnavailable: 1
