@@ -41,7 +41,7 @@ const App: React.FC = () => {
         Coleman Liau: {colemanLiauScore}
       </div>
       <div>
-        Dale Chall: {daleChallFormulaScore}
+        Dale Chall: {daleChallFormulaGrade}
       </div>
     </div>
   );
