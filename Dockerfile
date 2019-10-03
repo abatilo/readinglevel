@@ -1,4 +1,4 @@
-FROM node:8.15.0 AS build
+FROM node:12.10.0 AS build
 
 WORKDIR /src
 COPY ./package.json ./package-lock.json ./
