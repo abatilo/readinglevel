@@ -13,12 +13,10 @@ import smogFormula from 'smog-formula';
 import spache from 'spache';
 import spacheFormula from 'spache-formula';
 
-const defaultText = `
-In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
+const defaultText = `In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
 
 Radix sort can be applied to data that can be sorted lexicographically, be they
-integers, words, punch cards, playing cards, or the mail.
-`;
+integers, words, punch cards, playing cards, or the mail.`;
 
 const App: React.FC = () => {
   const [words, setWords] = useState(defaultText);
@@ -39,9 +37,9 @@ const App: React.FC = () => {
   const multiSyllabicWordCount: number = tokens.map(t => syllables(t)).filter(n => 3 <=
                                                                            n).length;
 
-  const gunningFogScore: number = Math.ceil(gunningFog({sentence:sentenceCount, word: wordCount, complexPolysillabicWord: multiSyllabicWordCount}));
-  const automatedReadabilityScore: number = Math.ceil(automatedReadability({sentence:sentenceCount, word: wordCount, character: characterCount}));
-  const colemanLiauScore: number = Math.ceil(colemanLiau({sentence:sentenceCount, word: wordCount, letter: characterCount}));
+  const gunningFogScore: number = Math.floor(gunningFog({sentence:sentenceCount, word: wordCount, complexPolysillabicWord: multiSyllabicWordCount}));
+  const automatedReadabilityScore: number = Math.floor(automatedReadability({sentence:sentenceCount, word: wordCount, character: characterCount}));
+  const colemanLiauScore: number = Math.floor(colemanLiau({sentence:sentenceCount, word: wordCount, letter: characterCount}));
 
   const daleChallFormulaScore: number = daleChallFormula({word: wordCount, sentence: sentenceCount, difficultWord: hardWordCount});
   const daleChallFormulaGrade: number = daleChallFormulaScore < 10 ? daleChallFormula.gradeLevel(daleChallFormulaScore)[0] : 16;
@@ -52,14 +50,14 @@ const App: React.FC = () => {
                                      syllable: syllableCount});
   const fleschAge: number = 20 - Math.floor(fleschScore / 10);
 
-  const fleschKincaidScore: number = Math.ceil(fleschKincaid({word: wordCount, sentence: sentenceCount,
+  const fleschKincaidScore: number = Math.floor(fleschKincaid({word: wordCount, sentence: sentenceCount,
                                      syllable: syllableCount}));
 
-  const smogFormulaGrade: number = Math.ceil(smogFormula({sentence: sentenceCount,
+  const smogFormulaGrade: number = Math.floor(smogFormula({sentence: sentenceCount,
                                                          polysillabicWord:
                                                          multiSyllabicWordCount}));
 
-  const spacheFormulaGrade: number = Math.ceil(spacheFormula({word: wordCount, sentence: sentenceCount, unfamiliarWord:
+  const spacheFormulaGrade: number = Math.floor(spacheFormula({word: wordCount, sentence: sentenceCount, unfamiliarWord:
                       unfamiliarSpacheWordsCount}));
 
   return (
