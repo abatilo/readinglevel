@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - master
+
+name: CI
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Push container
+      uses: ./.github/make/
+      with:
+        args: push
+      env:
+        REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
+        REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+        REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
