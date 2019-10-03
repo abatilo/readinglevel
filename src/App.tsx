@@ -43,8 +43,6 @@ const App: React.FC = () => {
 
   const daleChallFormulaScore: number = daleChallFormula({word: wordCount, sentence: sentenceCount, difficultWord: hardWordCount});
   const daleChallFormulaGrade: number = daleChallFormulaScore < 10 ? daleChallFormula.gradeLevel(daleChallFormulaScore)[0] : 16;
-  console.log(daleChallFormulaScore);
-  console.log(daleChallFormulaGrade);
 
   const fleschScore: number = flesch({word: wordCount, sentence: sentenceCount,
                                      syllable: syllableCount});
