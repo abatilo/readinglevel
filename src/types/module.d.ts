@@ -41,11 +41,46 @@ declare module 'dale-chall-formula' {
   }
 
   interface GradeLevelFunction {
-    (value: DaleChallFormulaCounts): number[];
-    gradeLevel(score: number[]): number;
+    (value: DaleChallFormulaCounts): number;
+    gradeLevel(score: number): number[];
   }
 
   declare const daleChallFormula: GradeLevelFunction;
 
   export default daleChallFormula;
+}
+
+declare module 'flesch' {
+  type FleschCounts = {
+    sentence: number;
+    word: number;
+    syllable: number;
+  }
+  export default function flesch(value: FleschCounts): number;
+}
+
+declare module 'flesch-kincaid' {
+  type FleschKincaidCounts = {
+    sentence: number;
+    word: number;
+    syllable: number;
+  }
+  export default function fleschKincaid(value: FleschKincaidCounts): number;
+}
+
+declare module 'smog-formula' {
+  type SmogFormulaCounts = {
+    sentence: number;
+    polysillabicWord: number;
+  }
+  export default function smogFormula(value: SmogFormulaCounts): number;
+}
+
+declare module 'spache-formula' {
+  type SpacheFormulaCounts = {
+    word: number;
+    sentence: number;
+    unfamiliarWord: number;
+  }
+  export default function spacheFormula(value: SpacheFormulaCounts): number;
 }
