@@ -41,6 +41,13 @@ spec:
             - containerPort: 80
               name: http
               protocol: TCP
+          resources:
+            limits:
+              cpu: 25m
+              memory: 32Mi
+            requests:
+              cpu: 25m
+              memory: 32Mi
       imagePullSecrets:
         - name: abatilo-registry
 ---
