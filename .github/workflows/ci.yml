@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Push container
-      uses: ./.github/make/
+      uses: ./.github/actions/make/
       with:
         args: push
       env:
