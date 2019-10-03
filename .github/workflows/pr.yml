@@ -11,3 +11,5 @@ jobs:
       uses: ./.github/actions/make/
       with:
         args: build
+      env:
+        REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
