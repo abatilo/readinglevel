@@ -4,7 +4,6 @@ import tokenizer from 'sbd';
 import syllables from 'syllable';
 import spache from 'spache';
 import daleChall from 'dale-chall';
-
 import GunningFog from './GunningFog';
 import AutomatedReadability from './AutomatedReadability';
 import ColemanLiau from './ColemanLiau';
@@ -13,6 +12,7 @@ import Flesch from './Flesch';
 import FleschKincaid from './FleschKincaid';
 import SMOG from './SMOG';
 import Spache from './Spache';
+import styles from './App.module.scss';
 
 const defaultText = `In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
 
@@ -51,16 +51,20 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <textarea value={words} onChange={(event) => setWords(event.target.value)} />
-      <GunningFog {...params} />
-      <AutomatedReadability {...params} />
-      <ColemanLiau {...params} />
-      <DaleChall {...params} />
-      <Flesch {...params} />
-      <FleschKincaid {...params} />
-      <SMOG {...params} />
-      <Spache {...params} />
+    <div className={styles.app}>
+      <div className={styles.textAreaContainer}>
+        <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
+      </div>
+      <div className={styles.scoreContainer}>
+        <GunningFog {...params} />
+        <AutomatedReadability {...params} />
+        <ColemanLiau {...params} />
+        <DaleChall {...params} />
+        <Flesch {...params} />
+        <FleschKincaid {...params} />
+        <SMOG {...params} />
+        <Spache {...params} />
+      </div>
     </div>
   );
 }
