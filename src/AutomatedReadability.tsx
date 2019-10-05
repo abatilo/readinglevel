@@ -10,9 +10,10 @@ type AutomatedReadabilityProps = {
 const AutomatedReadability = (props: AutomatedReadabilityProps) => {
   const automatedReadabilityScore: number = Math.floor(automatedReadability({...props}));
   return (
-    <div>
-      Automated Readability (Grade Level): {automatedReadabilityScore}
-    </div>
+    <tr>
+      <td>Automated Readability</td>
+      <td>{automatedReadabilityScore}</td>
+    </tr>
   );
 }
 

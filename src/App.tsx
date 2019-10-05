@@ -56,14 +56,22 @@ const App: React.FC = () => {
         <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
       </div>
       <div className={styles.scoreContainer}>
-        <GunningFog {...params} />
-        <AutomatedReadability {...params} />
-        <ColemanLiau {...params} />
-        <DaleChall {...params} />
-        <Flesch {...params} />
-        <FleschKincaid {...params} />
-        <SMOG {...params} />
-        <Spache {...params} />
+        <table className={styles.table}>
+          <tbody>
+            <tr>
+              <th>Algorithm</th>
+              <th>U.S. Grade Level</th>
+            </tr>
+            <GunningFog {...params} />
+            <AutomatedReadability {...params} />
+            <ColemanLiau {...params} />
+            <DaleChall {...params} />
+            <Flesch {...params} />
+            <FleschKincaid {...params} />
+            <SMOG {...params} />
+            <Spache {...params} />
+          </tbody>
+        </table>
       </div>
     </div>
   );

@@ -10,9 +10,10 @@ type GunningFogProps = {
 const GunningFog = (props: GunningFogProps) => {
   const gunningFogScore: number = Math.floor(gunningFog({...props}));
   return (
-    <div>
-      Gunning Fog (Grade Level): {gunningFogScore}
-    </div>
+    <tr>
+      <td>Gunning Fog:</td>
+      <td>{gunningFogScore}</td>
+    </tr>
   );
 }
 

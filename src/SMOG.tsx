@@ -9,9 +9,10 @@ type SMOGProps = {
 const SMOG = (props: SMOGProps) => {
   const smogFormulaGrade: number = Math.floor(smogFormula({...props}));
   return (
-    <div>
-      SMOG Formula (Grade Level): {smogFormulaGrade}
-    </div>
+    <tr>
+      <td>SMOG</td>
+      <td>{smogFormulaGrade}</td>
+    </tr>
   );
 }
 

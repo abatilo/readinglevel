@@ -10,9 +10,10 @@ type ColemanLiauProps = {
 const ColemanLiau = (props: ColemanLiauProps) => {
   const colemanLiauScore: number = Math.floor(colemanLiau({...props}));
   return (
-    <div>
-      Coleman Liau (Grade Level): {colemanLiauScore}
-    </div>
+    <tr>
+      <td>Coleman Liau</td>
+      <td>{colemanLiauScore}</td>
+    </tr>
   );
 }
 

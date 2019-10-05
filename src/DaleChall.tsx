@@ -11,9 +11,10 @@ const DaleChall = (props: DaleChallProps) => {
   const daleChallFormulaScore: number = daleChallFormula({...props});
   const daleChallFormulaGrade: number = daleChallFormulaScore < 10 ? daleChallFormula.gradeLevel(daleChallFormulaScore)[0] : 16;
   return (
-    <div>
-      Dale Chall (Grade Level): {daleChallFormulaGrade}
-    </div>
+    <tr>
+      <td>Dale Chall</td>
+      <td>{daleChallFormulaGrade}</td>
+    </tr>
   );
 }
 

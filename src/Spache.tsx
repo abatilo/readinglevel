@@ -10,9 +10,10 @@ type SpacheProps = {
 const Spache = (props: SpacheProps) => {
   const spacheFormulaGrade: number = Math.floor(spacheFormula({...props}));
   return (
-    <div>
-      Spache Formula (Grade Level): {spacheFormulaGrade}
-    </div>
+    <tr>
+      <td>Spache Formula</td>
+      <td>{spacheFormulaGrade}</td>
+    </tr>
   );
 }
 

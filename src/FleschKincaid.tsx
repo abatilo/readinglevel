@@ -10,9 +10,10 @@ type FleschKincaidProps = {
 const FleschKincaid = (props: FleschKincaidProps) => {
   const fleschKincaidScore: number = Math.floor(fleschKincaid({...props}));
   return (
-    <div>
-      Flesch Kincaid (Grade Level): {fleschKincaidScore}
-    </div>
+    <tr>
+      <td>Flesch Kincaid</td>
+      <td>{fleschKincaidScore}</td>
+    </tr>
   );
 }
 
