@@ -36,7 +36,7 @@ const App: React.FC = () => {
   const syllableCount: number = syllables(words);
 
   const multiSyllabicWordCount: number = tokens.map(t => syllables(t)).filter(n => 3 <=
-                                                                           n).length;
+                                                                              n).length;
 
   const params = {
     sentence: sentenceCount,
@@ -51,28 +51,36 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={styles.app}>
-      <div className={styles.textAreaContainer}>
-        <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
+    <div>
+      <div className={styles.app}>
+        <div className={styles.textAreaContainer}>
+          <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
+        </div>
+        <div className={styles.scoreContainer}>
+          <table className={styles.table}>
+            <tbody>
+              <tr>
+                <th>Algorithm</th>
+                <th>U.S. Grade Level</th>
+              </tr>
+              <GunningFog {...params} />
+              <AutomatedReadability {...params} />
+              <ColemanLiau {...params} />
+              <DaleChall {...params} />
+              <Flesch {...params} />
+              <FleschKincaid {...params} />
+              <SMOG {...params} />
+              <Spache {...params} />
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div className={styles.scoreContainer}>
-        <table className={styles.table}>
-          <tbody>
-            <tr>
-              <th>Algorithm</th>
-              <th>U.S. Grade Level</th>
-            </tr>
-            <GunningFog {...params} />
-            <AutomatedReadability {...params} />
-            <ColemanLiau {...params} />
-            <DaleChall {...params} />
-            <Flesch {...params} />
-            <FleschKincaid {...params} />
-            <SMOG {...params} />
-            <Spache {...params} />
-          </tbody>
-        </table>
-      </div>
+      <footer className={styles.footer}>
+        <p>
+          If you have any feedback, we'd love to hear it at <a
+          href="mailto:feedback@readinglevel.app">feedback@readinglevel.app</a>
+        </p>
+      </footer>
     </div>
   );
 }
