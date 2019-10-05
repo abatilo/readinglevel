@@ -7,11 +7,13 @@ type FleschKincaidProps = {
   syllable: number;
 }
 
+const explanation: string = `The Flesch-Kincaid readability test calculates readability by comparing the number of words to the number of sentences and the number of syllables to the number of words. The Flesch reading ease test is most accurate for text intended for 5th graders and beyond.`;
+
 const FleschKincaid = (props: FleschKincaidProps) => {
   const fleschKincaidScore: number = Math.floor(fleschKincaid({...props}));
   return (
     <tr>
-      <td>Flesch Kincaid</td>
+      <td><span data-tip={explanation}>Flesch-Kincaid</span></td>
       <td>{fleschKincaidScore}</td>
     </tr>
   );

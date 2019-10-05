@@ -12,6 +12,7 @@ import Flesch from './Flesch';
 import FleschKincaid from './FleschKincaid';
 import SMOG from './SMOG';
 import Spache from './Spache';
+import ReactTooltip from 'react-tooltip';
 import styles from './App.module.scss';
 
 const defaultText = `In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
@@ -52,6 +53,7 @@ const App: React.FC = () => {
 
   return (
     <div>
+      <ReactTooltip place="right" effect="solid" type="dark" multiline={true} />
       <div className={styles.app}>
         <div className={styles.textAreaContainer}>
           <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
@@ -63,12 +65,12 @@ const App: React.FC = () => {
                 <th>Algorithm</th>
                 <th>U.S. Grade Level</th>
               </tr>
-              <GunningFog {...params} />
               <AutomatedReadability {...params} />
               <ColemanLiau {...params} />
               <DaleChall {...params} />
               <Flesch {...params} />
               <FleschKincaid {...params} />
+              <GunningFog {...params} />
               <SMOG {...params} />
               <Spache {...params} />
             </tbody>
