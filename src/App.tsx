@@ -82,7 +82,7 @@ const App: React.FC = () => {
           If you have any feedback, we'd love to hear it at <a
           href="mailto:feedback@readinglevel.app">feedback@readinglevel.app</a>
         </p>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></p>
       </footer>
     </div>
   );
