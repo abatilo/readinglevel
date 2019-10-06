@@ -15,10 +15,13 @@ import Spache from './Spache';
 import ReactTooltip from 'react-tooltip';
 import styles from './App.module.scss';
 
-const defaultText = `In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
+const defaultText = `ReadingLevel.app will give you a rough estimate at the required level of education necessary for someone to read and comprehend your body of text.
 
-Radix sort can be applied to data that can be sorted lexicographically, be they
-integers, words, punch cards, playing cards, or the mail.`;
+This can be used to ensure that your speech is easy to understand for your audience, or to make sure that some passage is appropriate to read to your class. There are many reasons that you might want to know what grade level you're communicating at.
+
+To use this web app, just replace this text with whatever you want to analyze. The grade level estimates will update in real time.
+
+ReadingLevel.app implements all of the most commonly used algorithms. By hovering over each algorithm name, you can read a brief summary about what each algorithm is measuring.`;
 
 const App: React.FC = () => {
   const [words, setWords] = useState(defaultText);
