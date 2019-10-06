@@ -53,7 +53,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <ReactTooltip place="right" effect="solid" type="dark" multiline={true} />
+      <ReactTooltip type="dark" multiline={true} />
       <div className={styles.app}>
         <div className={styles.textAreaContainer}>
           <textarea className={styles.textArea} value={words} onChange={(event) => setWords(event.target.value)} />
