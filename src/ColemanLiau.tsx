@@ -17,7 +17,7 @@ const ColemanLiau = (props: ColemanLiauProps) => {
       <td>
         <span data-tip={explanation}>
           Coleman-Liau
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{colemanLiauScore}</td>

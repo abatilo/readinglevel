@@ -17,7 +17,7 @@ const Spache = (props: SpacheProps) => {
       <td>
         <span data-tip={explanation}>
           Spache Formula
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{spacheFormulaGrade}</td>

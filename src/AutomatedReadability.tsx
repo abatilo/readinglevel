@@ -17,7 +17,7 @@ const AutomatedReadability = (props: AutomatedReadabilityProps) => {
       <td>
         <span data-tip={explanation}>
           Automated Readability
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{automatedReadabilityScore}</td>

@@ -16,7 +16,7 @@ const SMOG = (props: SMOGProps) => {
       <td>
         <span data-tip={explanation}>
           SMOG
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{smogFormulaGrade}</td>

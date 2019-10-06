@@ -18,7 +18,7 @@ const DaleChall = (props: DaleChallProps) => {
       <td>
         <span data-tip={explanation}>
           Dale-Chall
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{daleChallFormulaGrade}</td>

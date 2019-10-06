@@ -17,7 +17,7 @@ const FleschKincaid = (props: FleschKincaidProps) => {
       <td>
         <span data-tip={explanation}>
           Flesch-Kincaid
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{fleschKincaidScore}</td>

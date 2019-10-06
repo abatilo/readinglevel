@@ -20,7 +20,7 @@ const Flesch = (props: FleschProps) => {
       <td>
         <span data-tip={explanation}>
           Flesch
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{fleschGrade}</td>

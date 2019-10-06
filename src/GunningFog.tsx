@@ -17,7 +17,7 @@ const GunningFog = (props: GunningFogProps) => {
       <td>
         <span data-tip={explanation}>
           Gunning Fog
-          <img src={infoSvg} />
+          <img src={infoSvg} alt="Info icon" />
         </span>
       </td>
       <td>{gunningFogScore}</td>
