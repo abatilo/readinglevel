@@ -74,14 +74,17 @@ metadata:
     app: readinglevel
   annotations:
     kubernetes.io/ingress.class: traefik
+    ingress.kubernetes.io/force-hsts: "true"
+    ingress.kubernetes.io/hsts-max-age: "315360000"
+    ingress.kubernetes.io/hsts-include-subdomains: "true"
+    ingress.kubernetes.io/hsts-preload: "true"
+    ingress.kubernetes.io/browser-xss-filter: "true"
+    ingress.kubernetes.io/content-type-nosniff: "true"
+    ingress.kubernetes.io/custom-frame-options-value: "SAMEORIGIN"
+    ingress.kubernetes.io/referrer-policy: "no-referrer-when-downgrade"
+    ingress.kubernetes.io/content-security-policy: "upgrade-insecure-requests"
     ingress.kubernetes.io/custom-response-headers: |
-      Strict-Transport-Security: max-age=63072000; includeSubDomains; preload ||
-      X-XSS-Protection: 1; mode=block ||
-      X-Content-Type-Options: nosniff ||
-      X-Frame-Options: SAMEORIGIN ||
-      Referrer-Policy: no-referrer-when-downgrade ||
-      Content-Security-Policy: upgrade-insecure-requests ||
-      Feature-Policy: geolocation none; midi none; notifications none; push none; sync-xhr none; microphone none; camera none; magnetometer none; gyroscope none; speaker self; vibrate none; fullscreen self; payment none;
+      Feature-Policy: geolocation none; midi none; notifications none; push none; sync-xhr none; microphone none; camera none; magnetometer none; gyroscope none; speaker self; vibrate none; fullscreen self; payment none; ||
 spec:
   rules:
   - host: www.readinglevel.app
