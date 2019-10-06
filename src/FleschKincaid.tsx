@@ -1,5 +1,6 @@
 import React from 'react';
 import fleschKincaid from 'flesch-kincaid';
+import infoSvg from './info.svg';
 
 type FleschKincaidProps = {
   sentence: number;
@@ -13,7 +14,12 @@ const FleschKincaid = (props: FleschKincaidProps) => {
   const fleschKincaidScore: number = Math.floor(fleschKincaid({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>Flesch-Kincaid</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Flesch-Kincaid
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{fleschKincaidScore}</td>
     </tr>
   );

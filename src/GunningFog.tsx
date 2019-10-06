@@ -1,5 +1,6 @@
 import React from 'react';
 import gunningFog from 'gunning-fog';
+import infoSvg from './info.svg';
 
 type GunningFogProps = {
   sentence: number;
@@ -13,7 +14,12 @@ const GunningFog = (props: GunningFogProps) => {
   const gunningFogScore: number = Math.floor(gunningFog({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>Gunning Fog</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Gunning Fog
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{gunningFogScore}</td>
     </tr>
   );

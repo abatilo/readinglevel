@@ -1,5 +1,6 @@
 import React from 'react';
 import colemanLiau from 'coleman-liau';
+import infoSvg from './info.svg';
 
 type ColemanLiauProps = {
   sentence: number;
@@ -13,7 +14,12 @@ const ColemanLiau = (props: ColemanLiauProps) => {
   const colemanLiauScore: number = Math.floor(colemanLiau({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>Coleman-Liau</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Coleman-Liau
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{colemanLiauScore}</td>
     </tr>
   );

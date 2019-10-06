@@ -1,5 +1,6 @@
 import React from 'react';
 import daleChallFormula from 'dale-chall-formula';
+import infoSvg from './info.svg';
 
 type DaleChallProps = {
   sentence: number;
@@ -14,7 +15,12 @@ const DaleChall = (props: DaleChallProps) => {
   const daleChallFormulaGrade: number = daleChallFormulaScore < 10 ? daleChallFormula.gradeLevel(daleChallFormulaScore)[0] : 16;
   return (
     <tr>
-      <td><span data-tip={explanation}>Dale-Chall</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Dale-Chall
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{daleChallFormulaGrade}</td>
     </tr>
   );

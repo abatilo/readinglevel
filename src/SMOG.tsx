@@ -1,5 +1,6 @@
 import React from 'react';
 import smogFormula from 'smog-formula';
+import infoSvg from './info.svg';
 
 type SMOGProps = {
   sentence: number;
@@ -12,7 +13,12 @@ const SMOG = (props: SMOGProps) => {
   const smogFormulaGrade: number = Math.floor(smogFormula({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>SMOG</span></td>
+      <td>
+        <span data-tip={explanation}>
+          SMOG
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{smogFormulaGrade}</td>
     </tr>
   );

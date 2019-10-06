@@ -1,5 +1,6 @@
 import React from 'react';
 import spacheFormula from 'spache-formula';
+import infoSvg from './info.svg';
 
 type SpacheProps = {
   word: number;
@@ -13,7 +14,12 @@ const Spache = (props: SpacheProps) => {
   const spacheFormulaGrade: number = Math.floor(spacheFormula({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>Spache Formula</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Spache Formula
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{spacheFormulaGrade}</td>
     </tr>
   );

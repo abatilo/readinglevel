@@ -1,5 +1,6 @@
 import React from 'react';
 import automatedReadability from 'automated-readability';
+import infoSvg from './info.svg';
 
 type AutomatedReadabilityProps = {
   sentence: number;
@@ -13,7 +14,12 @@ const AutomatedReadability = (props: AutomatedReadabilityProps) => {
   const automatedReadabilityScore: number = Math.floor(automatedReadability({...props}));
   return (
     <tr>
-      <td><span data-tip={explanation}>Automated Readability</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Automated Readability
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{automatedReadabilityScore}</td>
     </tr>
   );

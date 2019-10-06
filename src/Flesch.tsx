@@ -1,6 +1,7 @@
 import React from 'react';
 import flesch from 'flesch';
 import usGrades from './AgeTranslation';
+import infoSvg from './info.svg';
 
 type FleschProps = {
   sentence: number;
@@ -16,7 +17,12 @@ const Flesch = (props: FleschProps) => {
   const fleschGrade: number = usGrades(fleschAge);
   return (
     <tr>
-      <td><span data-tip={explanation}>Flesch</span></td>
+      <td>
+        <span data-tip={explanation}>
+          Flesch
+          <img src={infoSvg} />
+        </span>
+      </td>
       <td>{fleschGrade}</td>
     </tr>
   );
