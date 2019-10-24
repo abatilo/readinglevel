@@ -17,7 +17,7 @@
     "flesch": "^1.0.4",
     "flesch-kincaid": "^1.0.4",
     "gunning-fog": "^1.0.5",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-ga": "^2.7.0",
