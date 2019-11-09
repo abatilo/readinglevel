@@ -7,20 +7,12 @@ steps:
       repo: 'abatilo/readinglevel'
       git: github
       revision: 'master'
-  version:
-    title: Get Version
-    type: freestyle
-    arguments:
-      image: 'alpine:latest'
-      working_directory: 'readinglevel/'
-      commands:
-        - cf_export VERSION=$(cat version.txt)
   build:
     title: Build
     type: build
     image_name: 'abatilo/readinglevel'
     working_directory: 'readinglevel'
-    tag: ${{VERSION}}
+    tag: sha-${{CF_SHORT_REVISION}}
   install:
     image: 'codefresh/cfstep-helm:2.9.1'
     title: Install
@@ -31,4 +23,4 @@ steps:
       - NAMESPACE=applications
       - VALUESFILE_prod='readinglevel/readinglevel/values.yaml'
       - VALUE_image_repository='r.cfcr.io/abatilo/abatilo/readinglevel'
-      - VALUE_image_tag='${{VERSION}}'
+      - VALUE_image_tag='sha-${{CF_SHORT_REVISION}}'
