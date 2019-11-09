@@ -1,0 +1,9 @@
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "readinglevel.fullname" . }}
+spec:
+  selector:
+    app.kubernetes.io/name: {{ include "readinglevel.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+  minAvailable: 2
