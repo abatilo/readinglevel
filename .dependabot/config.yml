@@ -11,16 +11,6 @@ update_configs:
           dependency_type: "all"
           update_type: "all"
   - package_manager: "docker"
-    directory: "/.github/actions/make"
-    update_schedule: "daily"
-    commit_message:
-      prefix: "chore"
-      include_scope: true
-    automerged_updates:
-      - match:
-          dependency_type: "all"
-          update_type: "all"
-  - package_manager: "docker"
     directory: "/"
     update_schedule: "daily"
     commit_message:
