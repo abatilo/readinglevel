@@ -10,7 +10,7 @@
     "@types/react-dom": "16.9.5",
     "@types/react-tooltip": "^3.11.0",
     "@types/wink-tokenizer": "^4.0.0",
-    "automated-readability": "^1.0.4",
+    "automated-readability": "^1.0.5",
     "coleman-liau": "^1.0.4",
     "dale-chall": "^1.0.3",
     "dale-chall-formula": "^1.0.4",

@@ -2585,10 +2585,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-automated-readability@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/automated-readability/-/automated-readability-1.0.4.tgz#301ad74793c1a735cd09963ccf9a7a113f708df7"
-  integrity sha512-jv3Ukp/aAFJpVqw6r67Y7rMvj9b6wnxycylbHck3T2hxazBHHCZBBGAsInYH5d3/JREuAPGmPW34pLuE55COrQ==
+automated-readability@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/automated-readability/-/automated-readability-1.0.5.tgz#c00dab2db74db6e4945ca065ee6bd3aaea0b50df"
+  integrity sha512-N6mr0nUS0TB+SLHCrDYzLIdJQ1wklXNhsiKYh6tcrjDMlhjfz6BFGlDvngcpcBvZpko10jVjvF5XziJOxyA9Sg==
 
 autoprefixer@^9.6.1:
   version "9.6.1"
