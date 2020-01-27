@@ -5118,10 +5118,10 @@ flesch-kincaid@^1.0.5:
   resolved "https://registry.yarnpkg.com/flesch-kincaid/-/flesch-kincaid-1.0.5.tgz#6fcc05c36a520abc1254c50290e89d19fbd15aed"
   integrity sha512-mNzSbHIwCpQG5md1e03hfPEP+Yb5mCfDBAaKyIzGJnWGigdx+aueBV/N+1AL1HogGeLveGZJ9a+ZE9oAUutCyw==
 
-flesch@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/flesch/-/flesch-1.0.4.tgz#0e3d1f3e2f6f7448fbd799d10acd3d029879cab8"
-  integrity sha512-PT0PbyEwA9EwCkaETWixiX5hbIT10ZC6k8F01piCpzNWBVimPVyjobFPq/8u9Vm5ikOdCpbFcVKrYRJ7+nxgjw==
+flesch@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/flesch/-/flesch-1.0.5.tgz#12dfba0a58d0e2c46044857109d5b78cf0449552"
+  integrity sha512-SE5X7jm4tp7sbKagLB0V9i0SrjWsFovus7db3E1nCyquy5249+Fyh+bBIK2crUuzX4maXn3Tu5bcMw8nF5oU8Q==
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
