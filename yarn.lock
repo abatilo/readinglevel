@@ -5113,10 +5113,10 @@ flatten@^1.0.2:
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
   integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
 
-flesch-kincaid@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/flesch-kincaid/-/flesch-kincaid-1.0.4.tgz#e3cad3be9121ecc4e792d505e2e43f19930eacee"
-  integrity sha512-Z+MxALtVgRkpgjIPwBoMd090De0GQBkWUloP2f2f0K+NYJNDSwcdn+kPzf5w5iont0HVruerO6QX8l4S1OPw3g==
+flesch-kincaid@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/flesch-kincaid/-/flesch-kincaid-1.0.5.tgz#6fcc05c36a520abc1254c50290e89d19fbd15aed"
+  integrity sha512-mNzSbHIwCpQG5md1e03hfPEP+Yb5mCfDBAaKyIzGJnWGigdx+aueBV/N+1AL1HogGeLveGZJ9a+ZE9oAUutCyw==
 
 flesch@^1.0.4:
   version "1.0.4"
