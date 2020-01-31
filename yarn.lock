@@ -4084,10 +4084,10 @@ dale-chall-formula@^1.0.5:
   resolved "https://registry.yarnpkg.com/dale-chall-formula/-/dale-chall-formula-1.0.5.tgz#b6655b9e8bfe210a4426778eb3349a3b6f55d7ff"
   integrity sha512-p7f37Bc6HkIUWDj/b/9r76qrXU7/yyR0lnp0Vmj0QjAG54KrFJbE8kVuPHdcKaCbwAFT8yNvCALMaajid/Mkfw==
 
-dale-chall@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/dale-chall/-/dale-chall-1.0.3.tgz#9e98bacd850c87dc077f273e29fba1fea546f843"
-  integrity sha512-GmZBdpSuvTg6qHZ4fPhZMEz9fa1xMrPOf/iIuWsmo+M/B8j4WwnKIKfeiRu7c8LVfr0pvZFhrccXiIdOzGxT6g==
+dale-chall@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/dale-chall/-/dale-chall-1.0.4.tgz#7811b9119d5813a929f52882210d7a4373a37758"
+  integrity sha512-3Wp5GrsQVxw+KVXfZK9iA6W0jGnkq5uXXQ51Scofb92cbipkRvUZTaeQBr/6rlxdOezkjUGglV1euWIBOGCTRA==
 
 damerau-levenshtein@^1.0.4:
   version "1.0.5"
