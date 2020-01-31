@@ -13,7 +13,7 @@
     "automated-readability": "^1.0.5",
     "coleman-liau": "^1.0.4",
     "dale-chall": "^1.0.3",
-    "dale-chall-formula": "^1.0.4",
+    "dale-chall-formula": "^1.0.5",
     "flesch": "^1.0.5",
     "flesch-kincaid": "^1.0.5",
     "gunning-fog": "^1.0.5",

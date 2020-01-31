@@ -4079,10 +4079,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-dale-chall-formula@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/dale-chall-formula/-/dale-chall-formula-1.0.4.tgz#947891bfe04ace45dfc951f09b540d218d3ec870"
-  integrity sha512-Kytq5NGrRTt46J9j3mqt4/igynll/jvIeNIPsLhYtpNiI44kWuGNx7LYgLfLUPp5BO6qfGwjYZcc6jUq1s136A==
+dale-chall-formula@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/dale-chall-formula/-/dale-chall-formula-1.0.5.tgz#b6655b9e8bfe210a4426778eb3349a3b6f55d7ff"
+  integrity sha512-p7f37Bc6HkIUWDj/b/9r76qrXU7/yyR0lnp0Vmj0QjAG54KrFJbE8kVuPHdcKaCbwAFT8yNvCALMaajid/Mkfw==
 
 dale-chall@^1.0.3:
   version "1.0.3"
