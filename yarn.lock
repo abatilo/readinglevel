@@ -3488,10 +3488,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-coleman-liau@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/coleman-liau/-/coleman-liau-1.0.4.tgz#8ed2b2fc0fa2634deb32de1944ba58d9f9fc78bb"
-  integrity sha512-TKPhY4dE9YyC5n35jBrt1kYDFCunwZ0f9rH41OlPeYd9wWgcr6UKvXJlo+OqC6E/b7BBg4FRJdLeFnW1KUfftw==
+coleman-liau@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/coleman-liau/-/coleman-liau-1.0.5.tgz#9bc0efacd62a16d22684eadfa4da15c9faf118f8"
+  integrity sha512-g4N/LvbIoGP7cq9E8QGrUWkHnhm9DXP0g1+axHIQnmQq/MwwPbBx5dGxQ0GbY5+ojibsIo1Rg0XuYkF+JPr7sw==
 
 collection-visit@^1.0.0:
   version "1.0.0"
