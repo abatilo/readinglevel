@@ -10651,10 +10651,10 @@ source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
-spache-formula@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/spache-formula/-/spache-formula-1.0.4.tgz#c7df0adcb26b43b0f477ad2473d2a948aa13f7fb"
-  integrity sha512-uIjXlQzX188U556Lp5ZCGynMG/7JFSkBEqJ9Php5cnFyxtHnN5RCVSb+xXQnSNfht401KD72KUVd7ZSTR2kKog==
+spache-formula@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/spache-formula/-/spache-formula-1.0.5.tgz#7a421dcd1044d013b2ebb7d35cddc1e43a79b0ea"
+  integrity sha512-eYX6hYxeFRZbkcpunMrxhKcGAydeT0hZ958Q20J/UA119EybMrU+KuiSSKNbCwR4D55Yk8J6APg16yuWGtjcDw==
 
 spache@^1.1.4:
   version "1.1.4"
