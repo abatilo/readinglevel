@@ -28,7 +28,7 @@
     "spache": "^1.1.4",
     "spache-formula": "^1.0.5",
     "syllable": "^4.0.1",
-    "typescript": "3.8.2",
+    "typescript": "3.8.3",
     "wink-tokenizer": "^5.2.1"
   },
   "scripts": {
