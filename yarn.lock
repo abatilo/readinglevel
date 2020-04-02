@@ -9973,10 +9973,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-tooltip@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.1.3.tgz#29d4fe854b678992965b131698b3bf1818474015"
-  integrity sha512-Tzi9QGn7WGC6NocvWHtQw2Lp7nOFSt2rB9Gyg4O4vflT/catGDNMvo8vXBIzKHYKp+tXYj8eZCN7AxoZtW3zXg==
+react-tooltip@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.1.4.tgz#c3dbee24dd7c7ea67f6c685711883dfa523a35b2"
+  integrity sha512-PSsKrg0yj8PIFU7DfdWK5TIf9w2FWpxZD0thh2eB5PF7T4FMrxFgWOERg5GhSglrApObNacYzoqLFqcL+cXMOA==
   dependencies:
     prop-types "^15.7.2"
 
