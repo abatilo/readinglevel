@@ -22,7 +22,7 @@
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-scripts": "3.4.1",
-    "react-tooltip": "^4.1.5",
+    "react-tooltip": "^4.2.1",
     "sbd": "^1.0.17",
     "smog-formula": "^1.0.5",
     "spache": "^1.1.4",
