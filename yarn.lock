@@ -10500,10 +10500,10 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sanitize-html@^1.22.1:
-  version "1.22.1"
-  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.22.1.tgz#5b36c92ab27917ddd2775396815c2bc1a6268310"
-  integrity sha512-++IMC00KfMQc45UWZJlhWOlS9eMrME38sFG9GXfR+k6oBo9JXSYQgTOZCl9j3v/smFTRNT9XNwz5DseFdMY+2Q==
+sanitize-html@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-1.23.0.tgz#e7a5ce7427cd2844dae5b9961cd372e349f91fb5"
+  integrity sha512-7MgUrbZpaig6zHwuHjpNqhkiuutFPWWoFY/RmdtEnvrFKMLafzSHfFyOozVpKWytkZIUhbYu3VQ/93OmYdo3ag==
   dependencies:
     chalk "^2.4.1"
     htmlparser2 "^4.1.0"
@@ -10554,12 +10554,12 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-sbd@^1.0.17:
-  version "1.0.17"
-  resolved "https://registry.yarnpkg.com/sbd/-/sbd-1.0.17.tgz#3b82cb2a5eb8d986d8d40e6fe17f6234eb315845"
-  integrity sha512-KVg7cjR+Iuzus+ZdSZiu0IpAn53/FhhzOVVGRYckiMiHTv5opqUTLw94pYXn3PfzVAXnRw1RXWuOSumwePkNbA==
+sbd@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/sbd/-/sbd-1.0.18.tgz#72f7b49c879121203556ff7682f04965cddb4228"
+  integrity sha512-XzMkPJ2HRIoZKSfK9GoWgzjnO/H0Ur7Obs0Lw6aE2kApBJm/mnwIR8xNsq4tNFXF21AS32ne/fJwLSzQ6zPGlA==
   dependencies:
-    sanitize-html "^1.22.1"
+    sanitize-html "^1.23.0"
 
 scheduler@^0.19.1:
   version "0.19.1"
