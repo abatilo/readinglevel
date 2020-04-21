@@ -27,7 +27,7 @@
     "smog-formula": "^1.0.5",
     "spache": "^1.1.4",
     "spache-formula": "^1.0.5",
-    "syllable": "^4.0.1",
+    "syllable": "^4.1.0",
     "typescript": "3.8.3",
     "wink-tokenizer": "^5.2.1"
   },
