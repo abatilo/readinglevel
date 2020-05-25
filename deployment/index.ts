@@ -32,6 +32,17 @@ const deployment = new kx.Deployment(
 );
 const service = deployment.createService();
 
+const pdb = new k8s.policy.v1beta1.PodDisruptionBudget(
+  appName,
+  {
+    spec: {
+      maxUnavailable: 0,
+      selector: deployment.spec.selector
+    },
+  },
+  { provider: k8sProvider }
+);
+
 const ingressMiddleware = new k8s.apiextensions.CustomResource(
   appName,
   {
