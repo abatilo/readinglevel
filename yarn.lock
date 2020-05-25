@@ -10916,10 +10916,10 @@ spache-formula@^1.0.5:
   resolved "https://registry.yarnpkg.com/spache-formula/-/spache-formula-1.0.5.tgz#7a421dcd1044d013b2ebb7d35cddc1e43a79b0ea"
   integrity sha512-eYX6hYxeFRZbkcpunMrxhKcGAydeT0hZ958Q20J/UA119EybMrU+KuiSSKNbCwR4D55Yk8J6APg16yuWGtjcDw==
 
-spache@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/spache/-/spache-1.1.4.tgz#edf21a69186eba2692b6dd14ef548e577e9dc95a"
-  integrity sha512-09mf/G1h6imwM+trkBKMSt84A1VhlSrpP/1MF2bh6hjyNo9XE4O6/QOlNAEE9X4up+EgJ4dNuJmumLDQtzg+kA==
+spache@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/spache/-/spache-1.1.5.tgz#cc2f41afaa5a2959216673fe5aa853af75049594"
+  integrity sha512-fblcef79rv7R/pRogLcnt8pYEWc5oLJ8RS7hArT6kCHp5gaVPG8EVzy2FjLbpCclfu77E6GpuNdnP6muTe4YxQ==
 
 spdx-correct@^3.0.0:
   version "3.1.0"
