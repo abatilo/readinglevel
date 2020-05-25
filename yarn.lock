@@ -2133,10 +2133,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/wink-tokenizer@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@types/wink-tokenizer/-/wink-tokenizer-4.0.1.tgz#07391075f9403dc498a80410cc97f1c17cad7bfe"
-  integrity sha512-n5+UiQYqt8/gpiF6j5qroa4ezI7BZHA/KLk7iE6WdO9WRWJjY4KEJmOk4XL2/y72A5oBKdWHpsX7lUH/homr/Q==
+"@types/wink-tokenizer@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/wink-tokenizer/-/wink-tokenizer-4.0.2.tgz#a9794994de01029b4d5a46fd339c3af7dfbc719e"
+  integrity sha512-btI7/KTCHwokbz2Npx2rSQW1ENAdqQz6txOBnRv88OV5xK075LaWINoT0jOL835CVj6rnvR1zeIsTewullI/8w==
 
 "@types/yargs-parser@*":
   version "13.1.0"
