@@ -2113,12 +2113,12 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-tooltip@^3.11.0":
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/@types/react-tooltip/-/react-tooltip-3.11.0.tgz#e7e7e9c67629f2b6f75ea67752922c9de0b64468"
-  integrity sha512-TkXMgkZ5aAKkFE9Wvt8OlOiPtF9ufgBOL9xWlRSzLBaoL12qSOBiyMcU4/8TyED1fuWkm5VTVarScwOPLSArYw==
+"@types/react-tooltip@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@types/react-tooltip/-/react-tooltip-4.2.4.tgz#d0acad2a3061806e10aab91dd26a95a77fd35125"
+  integrity sha512-UzjzmgY/VH3Str6DcAGTLMA1mVVhGOyARNTANExrirtp+JgxhaIOVDxq4TIRmpSi4voLv+w4HA9CC5GvhhCA0A==
   dependencies:
-    "@types/react" "*"
+    react-tooltip "*"
 
 "@types/react@*", "@types/react@16.9.34":
   version "16.9.34"
@@ -9957,10 +9957,10 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-tooltip@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.5.tgz#2f26ce768461567b70799c4422a7e00a96de27ca"
-  integrity sha512-f7nxO4AB5PRf2mJRmRtFlaUEI9g0jGPQ+ncwV5kMAqz8/HDb71PpB0O9a/MvrjUOzwQQbhwCT0VzWH79qAkCtA==
+react-tooltip@*, react-tooltip@^4.2.5:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.6.tgz#a3d5f0d1b0c597c0852ba09c5e2af0019b7cfc70"
+  integrity sha512-KX/zCsPFCI8RuulzBX86U+Ur7FvgGNRBdb7dUu0ndo8Urinn48nANq9wfq4ABlehweQjPzLl7XdNAtLKza+I3w==
   dependencies:
     prop-types "^15.7.2"
     uuid "^7.0.3"
