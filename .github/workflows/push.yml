@@ -14,13 +14,13 @@ jobs:
       - name: asdf_install
         uses: asdf-vm/actions/install@v1.0.0
         env:
-          NODEJS_CHECK_SIGNATURES: "no"
+          NODEJS_CHECK_SIGNATURES: 'no'
       - env:
-          AWS_DEFAULT_REGION: "us-west-2"
+          AWS_DEFAULT_REGION: 'us-west-2'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
         working-directory: ./deployment
         run: |
           npm ci
-          pulumi up -s blog --yes --skip-preview
+          pulumi up -s readinglevel --yes --skip-preview
