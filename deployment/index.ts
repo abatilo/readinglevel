@@ -69,7 +69,7 @@ const gateway = new k8s.apiextensions.CustomResource(
             name: 'https',
             protocol: 'HTTP',
           },
-          hosts: ['www.readlinglevel.app'],
+          hosts: ['www.readinglevel.app'],
         },
       ],
     },
@@ -86,7 +86,7 @@ const virtualService = new k8s.apiextensions.CustomResource(
       namespace: deployment.metadata.namespace,
     },
     spec: {
-      hosts: ['www.readlinglevel.app'],
+      hosts: ['www.readinglevel.app'],
       gateways: [gateway.metadata.name],
       http: [
         {
