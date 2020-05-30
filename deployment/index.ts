@@ -24,6 +24,9 @@ const pod = new kx.PodBuilder({
 const deployment = new kx.Deployment(
   appName,
   {
+    metadata: {
+      namespace: 'applications',
+    },
     spec: pod.asDeploymentSpec({
       replicas: 2,
       strategy: { rollingUpdate: { maxUnavailable: 0 } },
