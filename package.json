@@ -29,7 +29,7 @@
     "spache-formula": "^1.0.5",
     "syllable": "^4.1.0",
     "typescript": "3.9.5",
-    "wink-tokenizer": "^5.2.1"
+    "wink-tokenizer": "^5.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

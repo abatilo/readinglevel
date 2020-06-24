@@ -12219,10 +12219,12 @@ wide-align@^1.1.0:
   dependencies:
     string-width "^1.0.2 || 2"
 
-wink-tokenizer@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/wink-tokenizer/-/wink-tokenizer-5.2.1.tgz#3c53fb6fb18dbf75b7da69f1808c0a447721963f"
-  integrity sha512-8WwUToAUvioN6zYCAgtgmqLZEgkLs9whJMVsd/l0NbWynRCz2HreP/YF9OzRS48H4kLIQCP0//ZvGw1cwVz2sg==
+wink-tokenizer@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/wink-tokenizer/-/wink-tokenizer-5.2.2.tgz#97300cc80c2ac55148f13701bc98f60b64ecade8"
+  integrity sha512-o7XlQXFC+yV0tV5QjEigBSRrDHHMsQ/RTzarhn+uul+YJLGkdh+1i0bOmEG4LFDc2StVsdno1551Ncbd8OYrCg==
+  dependencies:
+    emoji-regex "^9.0.0"
 
 word-wrap@~1.2.3:
   version "1.2.3"
