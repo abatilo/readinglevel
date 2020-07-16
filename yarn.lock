@@ -12228,10 +12228,10 @@ wide-align@^1.1.0:
   dependencies:
     string-width "^1.0.2 || 2"
 
-wink-tokenizer@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/wink-tokenizer/-/wink-tokenizer-5.2.2.tgz#97300cc80c2ac55148f13701bc98f60b64ecade8"
-  integrity sha512-o7XlQXFC+yV0tV5QjEigBSRrDHHMsQ/RTzarhn+uul+YJLGkdh+1i0bOmEG4LFDc2StVsdno1551Ncbd8OYrCg==
+wink-tokenizer@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/wink-tokenizer/-/wink-tokenizer-5.2.3.tgz#7ec5d29c83e3004497299b06076e3e433c60ecc1"
+  integrity sha512-pMvnjcGC9pMToomdB6FfYzv7r/6r+B75Ip4QxvmtGUSO+THq/27y81Q9zdOhQSl14TJidjtSn0pZIw4+OKkiSg==
   dependencies:
     emoji-regex "^9.0.0"
 
