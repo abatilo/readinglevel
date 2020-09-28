@@ -21,7 +21,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.3",
     "react-tooltip": "^4.2.10",
     "sbd": "^1.0.18",
     "smog-formula": "^1.0.5",
