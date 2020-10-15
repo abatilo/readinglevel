@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: asdf_install
-        uses: asdf-vm/actions/install@v1.0.0
+        uses: asdf-vm/actions/install@v1.0.1
         env:
           NODEJS_CHECK_SIGNATURES: 'no'
       - env:
