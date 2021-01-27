@@ -28,7 +28,7 @@ const deployment = new kx.Deployment(
       namespace: 'applications',
     },
     spec: pod.asDeploymentSpec({
-      replicas: 1,
+      replicas: 2,
       strategy: { rollingUpdate: { maxUnavailable: 0 } },
     }),
   },
