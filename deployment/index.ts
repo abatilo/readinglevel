@@ -43,7 +43,7 @@ const pdb = new k8s.policy.v1beta1.PodDisruptionBudget(
       namespace: 'applications',
     },
     spec: {
-      maxUnavailable: 0,
+      maxUnavailable: 1,
       selector: deployment.spec.selector,
     },
   },
