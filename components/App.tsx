@@ -8,7 +8,7 @@ import styles from "../styles/styles.module.scss";
 
 const tok = new Tokenizer("readinglevel");
 
-const defaultText = `ReadingLevel.app will give you a rough estimate at the required level of education necessary for someone to read and comprehend your body of text.
+const defaultText = `Reading Level will give you a rough estimate at the required level of education necessary for someone to read and comprehend your body of text.
 
 This can be used to ensure that your speech is easy to understand for your audience, or to make sure that some passage is appropriate to read to your class. There are many reasons that you might want to know what grade level you're communicating at.
 
