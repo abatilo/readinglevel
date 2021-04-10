@@ -13,7 +13,7 @@ const GunningFog = (props: Props) => {
   return (
     <tr>
       <td className={styles.relativeContainer}>
-        <p>gunning-Fog</p>
+        <p>Gunning-Fog</p>
         <div className={styles.toolTip}>{explanation}</div>
       </td>
       <td>{Math.floor(gunningFog(props))}</td>
