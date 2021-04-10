@@ -1,5 +1,0 @@
-name: readinglevel
-runtime: nodejs
-description: Estimate readability
-backend:
-  url: s3://abatilo/infra/cloud/
