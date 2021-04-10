@@ -8,13 +8,15 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "automated-readability": "^2.0.0",
+    "flesch-kincaid": "^2.0.0",
+    "gunning-fog": "^2.0.0",
     "next": "latest",
     "next-transpile-modules": "^6.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.32.8",
-    "sentence-tokenizer": "^1.0.1"
+    "sentence-tokenizer": "^1.0.1",
+    "syllable": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
